@@ -44,9 +44,9 @@ recvThread.start()
 # CREATE FUNCTIONS HERE....
 
 
-print("\nFirst & Last Names")
-print("Program Name: ")
-print("Date: ")
+print("\nTyler Shepard")
+print("Program Name: Flight School - square ")
+print("Date: 03.23.22")
 print("\n****CHECK YOUR TELLO WIFI ADDRESS****")
 print("\n****CHECK SURROUNDING AREA BEFORE FLIGHT****")
 ready = input('\nAre you ready to take flight: ')
@@ -58,9 +58,9 @@ try:
 
         sendmsg('command', 0)
         sendmsg('takeoff')
+        sendmsg('forward 100') # fly forward for 100cm
 
-        # Review the (SDK) Software Development Kit resource for Drone Commands
-        # Delete these comments before writing your program
+      
 
         sendmsg('land')
 
